@@ -3,6 +3,8 @@
 Code from https://www.biorxiv.org/content/10.1101/2023.01.12.523847v1
 
 Files that are run:
+
+   - formatTumorImage.py - formats the tumor image that the model is being fit to. Should be run before fitting
    
    - formatData.py - formats model simulations into simplified images for training the neural network
    
