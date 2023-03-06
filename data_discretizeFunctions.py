@@ -1,5 +1,13 @@
 '''
 This file converts lists of different cells into an image
+This is done by discretizing the continuous cell coordinates to a grid, then shrinking the grid to a set size
+This transforms the explicit cell locations into cell densities and facilitates the comparison between model simulations
+and actual tumor images. While some spatial detail is lost in the process, it is unlikely that the model captures
+enough biological detail to fully replicate in vivo intricacies.
+
+If the model is simulating on a 1-to-1 spatial scale with the image data, than resizing is not necessary
+and createGrids() can be run in place of smallGrids(). However, care must be taken to ensure that
+these grids end up the same size as each other.
 
 inputs to class
 ---------------
